@@ -77,3 +77,6 @@ Mini-Projects                |    40%     |
   * Data Ingestion and transformation with SQL
   * Data Visualizations and reporting in Dashboards
 
+## Lectures ##
+1. Introduction \[[**.html**](https://raw.githack.com/ECON725-EMORY/econ725-fall2024/main/01-intro/01slides.html) 
+2. Version control with Git(Hub) \[[**.html**](https://raw.githack.com/ECON725-EMORY/econ725-fall2024/main/02-github/02slides.html)
