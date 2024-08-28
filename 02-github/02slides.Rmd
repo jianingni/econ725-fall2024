@@ -85,7 +85,8 @@ name: prologue
 # Prologue
 
 - This lecture builds on Grant McDermott's [course materials](https://github.com/uo-ec607/lectures) (Lecture 2), from his time at the University of Oregon.
-<div style="margin-top: 2.5cm;"></div>
+
+- This presentation also builds on Pedro Sant'Anna’s materials and slide theme from his [ECON 525](https://psantanna.com/Econ520/) course at Emory University.
 
 - I have made some modifications to the original materials, but the core content remains the same.
 
