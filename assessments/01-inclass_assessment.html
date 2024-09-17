@@ -14606,40 +14606,55 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Instructions">Instructions<a class="anchor-link" href="#Instructions">&#182;</a></h2><ol>
-<li><strong>Shell Basics</strong>:<ul>
+<li><p><strong>Shell Basics</strong>:</p>
+<ul>
 <li>Open your terminal or command line interface.</li>
 <li>Identify which shell you are using with the command <code>echo $SHELL</code>.</li>
 <li>Use <code>man</code> or <code>--help</code> to look up the manual for the <code>ls</code> command.</li>
 </ul>
 </li>
-<li><strong>Help!</strong>:<ul>
+<li><p><strong>Getting Help</strong>:</p>
+<ul>
 <li>For each of the following commands, use <code>--help</code> or <code>man</code> to find out what they do: <code>cd</code>, <code>mkdir</code>, <code>rm</code>.</li>
 </ul>
 </li>
-<li><strong>Navigating Your System</strong>:<ul>
+<li><p><strong>Navigating Your System</strong>:</p>
+<ul>
 <li>Navigate to your home directory using <code>cd</code>.</li>
 <li>List all the files and directories in your home directory with a detailed view using <code>ls -l</code>.</li>
 <li>Create a new directory called <code>econ725_assessment</code>. Hint: use <code>mkdir</code>.</li>
 </ul>
 </li>
-<li><strong>Managing Your Files</strong>:<ul>
+<li><p><strong>Managing Files</strong>:</p>
+<ul>
+<li>Copy any text file from your system (you can use those ones covered in class) into this directory and rename it to <code>sample.txt</code>. Hint: use <code>cp</code> and <code>mv</code>.</li>
 <li>Inside <code>econ725_assessment</code>, create a new file called <code>my_script.sh</code>. Hint: use <code>touch</code>.</li>
-<li>Copy any text file from your system (you can use those ones covered in class) into this directory and rename it to <code>sample.txt</code>. Hint: use <code>cp</code>.</li>
+<li>Write a bash script in <code>my_script.sh</code> that performs all the following tasks.</li>
 </ul>
 </li>
-<li><strong>Working with Text Files</strong>:<ul>
-<li>Use <code>cat</code> to display the contents of <code>sample.txt</code>.</li>
-<li>Use <code>head</code> and <code>tail</code> to display the first and last 10 lines of <code>sample.txt</code>.</li>
+<li><p><strong>Working with Text Files</strong>:</p>
+<ul>
+<li>Inside your bash script, use <code>cat</code> to display the contents of an existing text file (<code>sample.txt</code>).</li>
+<li>Use <code>head</code> to display the first 10 lines of <code>sample.txt</code> and <code>tail</code> to display the last 10 lines.</li>
 </ul>
 </li>
-<li><strong>Redirects, Pipes, and Loops</strong>:<ul>
-<li>Redirect the output of <code>ls -l</code> to a file named <code>directory_list.txt</code>.</li>
-<li>Use a pipe to sort <code>directory_list.txt</code> alphabetically and display the results with <code>less</code>.</li>
+<li><p><strong>Redirects, Pipes, and Loops</strong>:</p>
+<ul>
+<li>In your bash script, redirect the output of <code>ls -l</code> to a file named <code>directory_list.txt</code>.</li>
+<li>Use a pipe (<code>|</code>) to sort <code>directory_list.txt</code> alphabetically and display the sorted content with <code>less</code>.</li>
 </ul>
 </li>
-<li><strong>Scripting</strong>:<ul>
-<li>Edit <code>my_script.sh</code> to include a <code>bash</code> script that prints "Hello, Data Science!" to the terminal.</li>
-<li>Make <code>my_script.sh</code> executable with <code>chmod</code> and run it.</li>
+<li><p><strong>Scripting</strong>:</p>
+<ul>
+<li>In your bash script, include a command that prints "Hello, Data Science!" to the terminal.</li>
+<li>Make <code>my_script.sh</code> executable using <code>chmod</code>, and then run the script. Use the manual command to find out how to make a script executable 🙂.</li>
+</ul>
+</li>
+<li><p><strong>Creating and Concatenating Files</strong>:</p>
+<ul>
+<li>In your bash script, create a folder called <code>texts</code> inside the <code>econ725_assessment</code> directory.</li>
+<li>Inside the <code>texts</code> folder, create 5 text files (<code>file1.txt</code>, <code>file2.txt</code>, etc.) using a <strong>for loop</strong>. Each file should contain a short message, like "This is file 1.", "This is file 2.", and so on.</li>
+<li>Use a command to concatenate the contents of all the text files into one final file called <code>all_texts.txt</code>. Ensure this file is saved in the <code>texts</code> folder.</li>
 </ul>
 </li>
 </ol>
@@ -14655,6 +14670,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Submission">Submission<a class="anchor-link" href="#Submission">&#182;</a></h3><p>Compress the <code>econ725_assessment</code> directory with all created files into a <code>.zip</code> file and submit it through Canvas (See Assignments). - Name the zip file <code>FirstName_LastName_econ725_assessment.zip</code>.</p>
+<p><strong>Criteria for grade</strong>: The submission will be graded based on the completion of the tasks and the correctness of the commands used. I will check your bash script and the output files/folders generated.</p>
 <p><strong>Note</strong>: Remember to replace <code>FirstName</code> and <code>LastName</code> with your actual last and first names.</p>
 
 </div>
