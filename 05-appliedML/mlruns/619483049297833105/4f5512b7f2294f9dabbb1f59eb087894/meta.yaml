@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/econ725-fall2024/05-appliedML/mlruns/619483049297833105/4f5512b7f2294f9dabbb1f59eb087894/artifacts
+end_time: 1731384582824
+entry_point_name: ''
+experiment_id: '619483049297833105'
+lifecycle_stage: active
+run_id: 4f5512b7f2294f9dabbb1f59eb087894
+run_name: delicate-croc-381
+run_uuid: 4f5512b7f2294f9dabbb1f59eb087894
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731384582817
+status: 4
+tags: []
+user_id: vscode
