@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/econ725-fall2024/05-appliedML/mlruns/619483049297833105/8eb805261e2541d4b6faee538d0b1a3a/artifacts
+end_time: 1731386909264
+entry_point_name: ''
+experiment_id: '619483049297833105'
+lifecycle_stage: active
+run_id: 8eb805261e2541d4b6faee538d0b1a3a
+run_name: judicious-lark-534
+run_uuid: 8eb805261e2541d4b6faee538d0b1a3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731386908923
+status: 3
+tags: []
+user_id: vscode
