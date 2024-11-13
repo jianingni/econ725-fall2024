@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/econ725-fall2024/05-appliedML/mlruns/619483049297833105/1ee6806471034014a02e374f18b04de3/artifacts
+end_time: 1731384624649
+entry_point_name: ''
+experiment_id: '619483049297833105'
+lifecycle_stage: active
+run_id: 1ee6806471034014a02e374f18b04de3
+run_name: sneaky-donkey-463
+run_uuid: 1ee6806471034014a02e374f18b04de3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1731384624628
+status: 4
+tags: []
+user_id: vscode
