@@ -1,0 +1,262 @@
+---
+title: "Lecture 5"
+subtitle: "MLOps"
+author: Marcelo Ortiz-Villavicencio
+date: ECON 725, Emory University
+output:
+  xaringan::moon_reader:
+    includes:
+        in_header: "mathjax-equation-numbers.html"
+        after_body: "insert-logo.html"
+    css: ['default', 'metropolis', 'metropolis-fonts', 'emory-colors.css']
+    # self_contained: true
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+    seal: false
+
+---
+
+
+```{r setup, include=FALSE}
+# xaringanExtra::use_scribble() ## Draw on slides. Requires dev version of xaringanExtra.
+library(tidyverse)
+library(hrbrthemes)
+library(fontawesome)
+```
+
+
+class: title-slide   
+
+
+
+# Econ 725: Computer Programming and Data Management in Economics 
+
+## Applied ML: MLOps and Experiment Tracking
+
+<p align=center>
+Marcelo Ortiz-Villavicencio
+</p>
+<div style="margin-top: -.7cm;"></div>
+<p align=center>
+Emory University
+</p>
+</p>
+<br>
+<p align=center>
+Fall 2024
+</p>
+
+---
+class: center, middle
+
+# What is MLOps?
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1100px></html>
+
+---
+
+# Machine Learning Operations (MLOps)
+
+...is the set of practices to design, deploy and maintain machine learning in production
+continuously, reliably, and efficiently.
+- Focus on machine learning 'in production'
+- The full machine learning lifecycle
+
+<div align="center">
+<img src="https://ml-ops.org/img/mlops-loop-en.jpg" width="40%">
+</div>
+
+---
+# The origin of MLOps
+
+- The origin comes from DevOps
+- DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)
+- The goal is to shorten the systems development life cycle and provide continuous delivery with high software quality
+
+<div align="center">
+<img src="https://miro.medium.com/v2/resize:fit:1400/0*Iepz1OLoJ_ppCbm6.png" width="50%">
+</div>
+
+
+---
+# Why MLOps?
+
+<div align="center">
+<img src="https://cdn.prod.website-files.com/618399cd49d125734c8dec95/66a3437f014c1e1ac78d4de9_6502ad4eb9b805fbe60281f4_figure%25203_lightbox.png" width="90%">
+</div>
+
+---
+
+# Deployment Gap
+- The deployment gap is the difference between the number of models that are built and the number of models that are deployed.
+- More and more enterprises are experimenting with ML. Getting a model into the real world involves more than just building it.
+- In order to take full advantage of the built ML model by making it available to our core software system, we would need to incorporate the trained ML model into the core codebase. 
+  - That means, we need to deploy the ML model into production. 
+
+
+
+---
+# Deployment Gap
+
+<div align="center">
+<img src="https://ml-ops.org/img/ML-deployment_Gap.jpg" width="70%">
+</div>
+
+ MLOps allows us to:
+ - Improve collaboration
+ - Automation of deployment
+ - Monitoring and maintenance
+---
+
+class: center, middle
+
+# Different phases in MLOps
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1100px></html>
+
+---
+# MLOps Lifecycle
+
+<div align="center">
+<img src="https://cdn.prod.website-files.com/6108e07db6795265f203a636/61f39b423ef33a6ccfad9663_MLOps.png"  width="70%">
+</div>
+
+
+---
+
+# Design phase
+
+- Context of the problem
+- Added value
+- Business requirements
+- Key metrics
+- Data sources
+
+
+
+---
+# Development phase
+
+- Develop machine learning models
+- Experiment with data, algorithms, and hyperparameters
+- Model ready for deployment
+
+---
+# Deployment phase
+
+- Integrate the machine learning models in business
+- Deploy the model in production
+- Monitor the model performance
+
+---
+
+class: center, middle
+
+# Development phase: Experiment Tracking
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1100px></html>
+---
+# Important Concepts
+
+- ML experiment: the process of building an ML model
+- Experiment run: each trial in an ML experiment
+- Run artifact: any file that is associated with an ML run
+- Experiment metadata: information about an ML experiment like the source
+code used, the name of the user, etc.
+
+---
+# What’s experiment tracking?
+
+
+
+Experiment tracking is the process of keeping track of all the relevant information
+from an ML experiment, which includes:
+- Source code
+- Environment
+- Data
+- Model
+- Hyperparameters
+- Metrics
+- ...
+
+---
+# Why is experiment tracking so important?
+.pull-left[
+In general, because of these 3 main reasons:
+- Reproducibility
+- Organization
+- Optimization
+]
+
+.pull-right[
+<div align="center">
+<img src="https://cdn.prod.website-files.com/64d39f3feec1e3615e150507/64d94dcd18778b93a9286d9c_647ef9479c37a63f953acd7c_Experiment_Tracker_Experiment_Components.png"  width="150%">
+</div>
+]
+
+---
+# Manual Tracking
+
+.pull-left[
+This involves using spreadsheets to manually log experiment details.
+- you’ll use systematic naming conventions to organize files and experiments in directories.
+- This method is easy to implement, but it falls apart at scale. 
+- Not only is there a risk of logging incorrect information, but also overwriting others’ work.
+]
+
+.pull-right[
+<div align="center">
+<img src="https://viso.ai/wp-content/smush-webp/2024/01/manual-dc-1060x491.jpg.webp"  width="100%">
+</div>
+]
+---
+# Using Moderns Experiment Tracking Tools
+.pull-left[
+There are specialized software solutions designed to systematically record, organize, and compare data from machine learning experiments.
+Built for ML models, they excel at:
+- tracking hyperparameters, 
+- evaluation metrics, 
+- model weights, and 
+- outputs. 
+
+Their functionalities are well-suited to typical ML tasks.
+]
+
+.pull-right[
+Common experiment tracking tools include:
+- MLFlow
+- CometML
+- Neptune
+- TensorBoard
+- Weights & Biases
+]
+---
+class: center, middle
+
+# Weights and Biases demo
+
+<html><div style='float:left'></div><hr color='#EB811B' size=1px width=1100px></html>
+---
+
+# Demo
+
+<div align="center">
+<img src="https://github.com/wandb/wandb/raw/main/assets/wandb_demo_experiments.gif" width="70%">
+</div>
+---
+
+class: center, middle, thank-you-slide
+# Thanks!
+
+
+`r fa('link')` [marcelortiz.com](https://marcelortiz.com/)
+
+`r fa('envelope')` [marcelo.ortiz@emory.edu](mailto:marcelo.ortiz@emory.edu)
+
+`r fa('twitter')` [@marcelortizv](https://twitter.com/marcelortizv)
+
+

@@ -3,3 +3,7 @@
 .RData
 .Ruserdata
 .DS_Store
+/05-appliedML/aclImdb/
+05-appliedML/aclImdb_v1.tar.gz
+/05-appliedML/artifacts/
+/05-appliedML/wandb/
